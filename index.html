@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GitHub Pages Finder</h1>
+            <p>Discover live deployments for any GitHub user</p>
+        </header>
+
+        <div class="search-section">
+            <div class="input-group">
+                <input type="text" id="usernameInput" placeholder="Enter GitHub username or profile URL" autocomplete="off">
+                <button id="searchBtn">
+                    <span>Check Repositories</span>
+                    <div class="spinner hidden"></div>
+                </button>
+            </div>
+            <div id="errorMsg" class="error-message hidden"></div>
+        </div>
+
+        <div id="stats" class="stats hidden">
+            <span>Found <strong id="totalCount">0</strong> active Pages sites</span>
+        </div>
+
+        <div id="results" class="results-grid">
+            <!-- Results will be injected here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
